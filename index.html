@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Part Two</title>
+    <style>
+      .clearfix{
+        clear:both;
+      }
+      *{
+        text-align: center;
+        font-family: Helvetica;
+        color: white;
+      }
+      body{
+        background-color: #485367;
+
+      }
+      .wrapper, .footer{
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .wide h3{
+        font-weight: normal;
+        display: inline-block;
+        background: olive;
+        padding: 5px 10px;
+      }
+      .wide h3:hover{
+        background: navy;
+      }
+      @media screen and (min-width: 728px){
+        .hero, .sponsor{
+          width: 40%;
+          display: inline-block;
+        }
+        div.hero *  {
+          text-align: left;
+        }
+      }
+      .footer-wrapper{
+        width: 100%;
+        left: 0;
+        right: 0;
+        position: absolute;
+        bottom: 0px;
+        background: #2D343D;
+      }
+      .footer *{
+        color: #7385A0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="hero">
+        <h1><img src="http://i.imgur.com/AaDDUUT.png"></h1>
+        <h2>Launching Soon!</h2>
+        <p>Feeling social pressure and a sense of failure? Part Two can help!</p>
+      </div>
+      <div class="sponsor">
+        <div class="image-wrap">
+          <img src="http://i.imgur.com/RAGpLZH.jpg" alt="">
+          <p>Now Sponsored</p>
+        </div>
+      </div>
+      <div class="wide">
+        <h3>Download for Google Glass!</h3>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="footer-wrapper">
+      <div class="footer">
+        Released at <a href="http://manhattanjs.com"><img style="width: 100px; background: #333; padding: 10px 10px 7px;" src="http://manhattanjs.com/assets/images/manhattan-js-wordmark.svg"></a> <br> Created by <a href="http://twitter.com/rememberlenny">@rememberlenny</a>
+      </div>
+    </div>
+  </body>
+</html>
